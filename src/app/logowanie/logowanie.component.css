@@ -1,0 +1,64 @@
+.login-form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.msg{
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="text"]{
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type="text"] + label{
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    pointer-events: none;
+    padding: 3px 5px;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus + label,
+input[type="text"]:valid + label{
+    top: -10px;
+    background-color: #fff;
+}
+
+input[type="submit"]{
+    width: 100%;
+    display: block;
+    background-color: crimson;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: unset;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.message{
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.message.error{
+    color: crimson;
+    border: 1px solid crimson;
+    background-color: rgb(252, 206, 206);
+}
+.message.success{
+    color: rgb(16, 126, 1);
+    border: 1px solid rgb(16, 126, 1);
+    background-color: rgb(188 253 180);
+}
